@@ -1,4 +1,7 @@
 Railsdude::Application.routes.draw do
+  resources :comments
+
+  devise_for :users
   get "pages/info"
   get "pages/welcome"
   resources :ideas
